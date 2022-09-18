@@ -1,17 +1,17 @@
 def superfizzbuzz(num):
     tmp = ""
     if num % 3 == 0:
-        tmp.append("Fizz")
+        tmp += "Fizz"
         if num % 9 == 0:
-            tmp.append("Fizz")
+            tmp += "Fizz"
             if num % 25 == 0:
-                tmp.append("BuzzBuzz")
+                tmp += "BuzzBuzz"
         elif num % 5 == 0:
-            tmp.append("Buzz")
+            tmp += "Buzz"
     elif num % 5 == 0:
-        tmp.append("Buzz")
+        tmp += "Buzz"
         if num % 25 == 0:
-            tmp.append("Buzz")
+            tmp += "Buzz"
     else:
         tmp = "NoFizzBuzz"
-    return (tmp)
+    return tmp
